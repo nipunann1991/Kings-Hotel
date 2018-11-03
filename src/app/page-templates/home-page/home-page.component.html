@@ -1,0 +1,137 @@
+<div class="loader site-loader"></div>
+<app-navigation></app-navigation>
+<section class="slider-content container-fluid"> 
+
+	<div id="image-slider" class="carousel slide carousel-fade" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li *ngFor="let isl of img_slider; let i = index" [ngClass]="{'active': isl.active == '1' }" data-target="#image-slider" class="s{{i}}" [attr.data-slide-to]="i" ></li> 
+	  </ol>
+	  <div class="carousel-inner">
+	    <div *ngFor="let isl of img_slider"  class="carousel-item" [ngClass]="{'active': isl.active == '1' }"  [ngStyle]="{'background-image': 'url('+ isl.url +')'}"> 
+
+	    </div> 
+	  </div>
+	  <a class="carousel-control-prev" href="#image-slider" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#image-slider" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div> 
+</section>
+
+<section class="about-hotel-content container-fluid">
+	<div class="container">
+		 <div class="row">
+		 	<div class="col-md-6 left-content">
+
+		 		<div class="img-content anim-up">
+		 			
+		 		</div>
+
+		 		<div class="img  img-small">
+		 			
+		 		</div>
+		 		
+		 	</div>
+		 	<div class="col-md-6 right-content">
+		 		<h2>About Kings Hotel</h2>
+		 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, accusantium vitae rem facilis quasi nobis repellendus molestias dolores eius inventore perferendis vero sit aperiam voluptas et praesentium incidunt, eos, quidem!</p>
+		 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos optio dolorem, quo praesentium nisi molestiae minus odit, impedit, expedita obcaecati, delectus quasi! Necessitatibus, ad! Ex dolorem voluptas sed nobis iusto!</p>
+		 		<a routerLink="/about-us" class="read-more" >Read More</a>
+		 	</div>
+		 </div>
+	</div>
+</section>
+
+<section class="rooms-content container-fluid">
+	<div class="parallax-image"></div>
+	<div class="container">
+		<h2>Rooms &amp; Suits</h2>
+		<p>Modern Hotel has 35 elegantly furnished and air conditioned classic rooms,<br/> which will be a perfect pick both for business and leisure travelers...</p>
+		 <div class="row"> 
+		 	<div class="col-md-4 room-details">
+		 		 <div class="img img1">
+		 		 	
+		 		 </div>
+		 		 <div class="details">
+		 		 	<h3>Deluxe Room</h3>
+		 		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, neque, impedit enim nobis temporibus distinctio delectus doloribus aspernatur molestiae beatae, ipsam similique quisquam voluptate accusantium atque omnis harum perferendis facilis!</p>
+		 		 </div>
+		 	</div>
+		 	<div class="col-md-4 room-details">
+		 		 <div class="img img2">
+		 		 	
+		 		 </div>
+		 		 <div class="details">
+		 		 	<h3>Executive Room</h3>
+		 		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, neque, impedit enim nobis temporibus distinctio delectus doloribus aspernatur molestiae beatae, ipsam similique quisquam voluptate accusantium atque omnis harum perferendis facilis!</p>
+		 		 </div>
+		 	</div>
+		 	<div class="col-md-4 room-details">
+		 		 <div class="img img3">
+		 		 	
+		 		 </div>
+		 		 <div class="details">
+		 		 	<h3>Standerd Triple Room</h3>
+		 		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, neque, impedit enim nobis temporibus distinctio delectus doloribus aspernatur molestiae beatae, ipsam similique quisquam voluptate accusantium atque omnis harum perferendis facilis!</p>
+		 		 </div>
+		 	</div>
+		 </div>
+
+		 <a href="#" class="read-more" >View More Rooms</a>
+	</div>
+</section>
+<section class="services-content container-fluid">
+	<div class="col-md-6 left-img">
+		
+	</div>
+	<div class="container"> 
+		 <div class="row"> 
+		 	<div class="col-md-6 offset-md-6 services-block">
+		 		<h2>Services We Offer</h2> 
+		 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim, nostrum at molestias, assumenda cupiditate alias illum. Soluta debitis sequi ullam, nam dicta a iusto vitae eos expedita. Minus, voluptate!</p>
+		 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim, nostrum at molestias, assumenda cupiditate alias illum. Soluta debitis sequi ullam, nam dicta a iusto vitae eos expedita. Minus, voluptate!</p>
+		 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus nam, sequi, sapiente sed expedita voluptas consectetur aspernatur voluptatum molestiae tenetur dolor aperiam perspiciatis consequuntur, minus rem laboriosam aliquid, ex!</p> 
+		 		 
+		 	</div>
+		</div>
+		 
+	</div>
+</section>
+
+<section class="gallery-content container-fluid">
+	<div class="col-md-6 left-img">
+		
+	</div>
+	<div class="container"> 
+		 <div class="row"> 
+		 	<div class="col-md-12 gallery">
+		 		<h2>Gallery</h2> 
+
+		 		<ng-masonry-grid class="anim-up"
+                    [masonryOptions]="{ transitionDuration: '0.8s', gutter: 4 }" 
+                    [useAnimation]="true"
+                    [useImagesLoaded]="true"
+                    [scrollAnimationOptions]="{ animationEffect: 'effect-4', minDuration : 0.4, maxDuration : 0.7 }">
+			      <!-- Masonry Grid Item -->
+
+			      <ng-masonry-grid-item id="{{'masonry-item-'+i}}" *ngFor="let item of masonryItems; let i = index;" (click)="removeItem($event)"> 
+			        <!-- Grid Content  -->
+			        <a data-fancybox="gallery" href="{{item.full_img}}">
+			        	<img src="{{item.thumb_img}}" alt="No image" />
+			        </a>
+			        
+			      </ng-masonry-grid-item>
+			    </ng-masonry-grid>
+
+			    <a href="#" class="read-more" >View More</a>
+		 		 
+		 	</div>
+		</div>
+		 
+	</div>
+</section>
+<app-footer></app-footer>

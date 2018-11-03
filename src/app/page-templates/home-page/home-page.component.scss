@@ -1,0 +1,233 @@
+@import '../../../styles';
+
+section{
+	padding: 80px 0;
+
+	h2{
+		text-align: center;
+		width: 100%;
+		font-size: $h2-font-size;
+		display: block;
+	}
+
+	&.slider-content{
+		height: 700px;
+		background: #eee; 
+		padding: 0;
+		@include flex(); 
+		position: relative;
+		
+
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			display: none;
+
+		}
+
+		.carousel{
+			position: absolute;
+		    top: 0;
+		    width: inherit;
+		    height: inherit;
+
+		    .carousel-control-prev, .carousel-control-next{
+		    	width: 5%;
+		    }
+
+		    .carousel-inner{
+				width: inherit;
+		    	height: inherit;
+
+		    	.carousel-item{
+		    		height: inherit;
+		    		background-size: cover;
+					background-position: 50%;
+
+		    		&.slider1{
+						background-image: url(../../../assets/images/slider-2.jpg);
+					}
+
+					&.slider2{
+						background-image: url(../../../assets/images/slider-1.jpg);
+					}
+
+		    	}
+		    }
+		} 
+
+
+		.slider-content-inner{
+			height: 100%;	
+			@include flex();
+			position: relative;
+			z-index: 2;
+
+			h1{
+				font-size: $h1-font-size; 
+				color: $white;
+				display: none;
+			}
+		}
+	}
+
+
+	&.about-hotel-content{
+
+		.left-content{
+			@include flex(); 
+			
+			.img-content{
+				width: 400px;
+				height: 400px;
+				background-color: #eee;
+				background-image: url(../../../assets/images/welcome-img.jpg);
+				background-size: cover;
+				background-position: 50%;
+			}
+
+		}
+
+		.right-content{
+	
+			h2{
+				font-size: $h2-font-size;
+				margin-bottom: 25px;
+				text-align: left;
+			}
+
+			p{
+				font-size: $base-font-size + 2;	
+			}
+
+		}
+	}
+
+	&.rooms-content{
+		text-align: center;
+		position: relative;
+		
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background-color: #fffaf5;
+
+		}
+
+		.parallax-image{
+			background-image: url(../../../assets/images/slider-2.jpg);
+			background-size: cover;
+			background-position: 50%;
+			position: absolute;
+			background-attachment: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: 0;
+			opacity: 0.08;
+			display: none;
+		}
+		
+		.container{
+			position: relative;
+			z-index: 100;
+
+			.row{
+				margin-top: 80px;
+				
+				.room-details{
+					.img{
+						width: 100%;
+						height: 250px;
+						background: #eee;
+						background-size: cover;
+						background-position: 50%;
+
+						&.img1{ 
+							background-image: url(../../../assets/images/deluxe-room.jpg);
+						}
+
+						&.img2{ 
+							background-image: url(../../../assets/images/exe-room.jpg);
+						}
+
+						&.img3{ 
+							background-image: url(../../../assets/images/triple-room.jpg);
+						}
+					}
+
+					.details{
+						padding: 15px;
+						text-align: left;
+
+						h3{
+							text-transform: capitalize;
+						}
+					}
+				}
+			} 
+		}
+
+		
+	}
+
+	&.services-content{
+		position: relative;
+		text-align: center;
+		background: $dark-brown-color;
+
+		.left-img{
+			position: absolute;
+		    top: 0;
+		    height: 100%;
+		    left: 0;
+		    background: #eee;
+		    z-index: 0;
+		    background-image: url(../../../assets/images/banner4.jpg);
+			background-size: cover;
+			background-position: 50%;
+		}
+
+		.services-block{
+			padding-left: 80px;
+			text-align: left;
+
+			h2{
+				margin-bottom: 30px;
+				color: $white;
+
+			}
+
+			p{
+				color: $white;
+			}
+		}
+
+	}
+
+	&.gallery-content{
+		text-align: center;
+
+		h2{
+			margin-bottom: 80px;
+		}
+		
+		a.read-more{
+			display: inline-block;
+			margin-top: 30px;
+		}
+
+	}
+}
+
+
+ 
+ 

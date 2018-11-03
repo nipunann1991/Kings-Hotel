@@ -1,0 +1,84 @@
+@charset 'UTF-8'; 
+
+@import 'variables';
+@import 'function';
+@import 'mixins';
+@import 'fonts';
+@import 'animate';
+
+
+
+h1, h2, h3{ 
+	font-family: 'Alice', serif;
+    text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+body, p{ 
+	font-family: 'Montserrat', sans-serif;
+	color: $dark-brown-color;
+	font-size: $base-font-size;	
+}
+
+
+.read-more{
+	margin-top: 20px;
+	display: inline-block;
+	padding: 12px 38px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $base-color;
+    background-color: transparent;
+    border: 1px $base-color solid; 
+    @include transition(0.5s all ease);
+	
+
+	&:hover{
+		background-color: $base-color;
+		color: $white;
+		text-decoration: none;
+	}
+
+}
+
+
+.site-loader{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 1003;
+}
+
+
+.parallax-header-content{
+	height: 300px;
+	background: #eee; 
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+
+	&:before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.05);
+		left: 0;
+		top: 0;
+	}
+
+	.container{
+		@include flex();
+		align-items: flex-end;
+		height: 100%;
+
+		h1{
+			margin-bottom: 50px;
+			color: $white;
+			z-index: 100;
+			position: relative;
+		}
+	}
+}
