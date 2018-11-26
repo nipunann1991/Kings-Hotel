@@ -11,8 +11,8 @@ export class Globals {
  
 
 	contact_details : any = {
-		address: "Kings Hotel, Nuwaraeliya Road, Nuwaraeliya, Sri Lanka",
-		tel: "(+94) 52 222 8887",
+		address: "Kings Hotel, Lot Number 50, Windermiyer Park, Nuwaraeliya, Sri Lanka",
+		tel: "(+94) 71 981 5500",
 		email: "info@kings-nuwaraeliya.com"
 
 	}   
@@ -20,8 +20,8 @@ export class Globals {
 	img_slider: any = [
 		{id: 0, url: '../../assets/images/slider-2.jpg', active: '1' },
 		{id: 1, url: '../../assets/images/slider-1.jpg', active: '0' },
-		{id: 2, url: '../../assets/images/slider-2.jpg', active: '0' },
-		{id: 3, url: '../../assets/images/slider-1.jpg', active: '0' }
+		{id: 2, url: '../../assets/images/slider-3.jpg', active: '0' },
+		{id: 3, url: '../../assets/images/slider-4.jpg', active: '0' }
 		
 	]
 
@@ -33,6 +33,11 @@ export class Globals {
 		$(document).ready(function() { 
 
 			var controller = new ScrollMagic.Controller(); 
+
+			$('.scroll-to-top').click(function(){ 
+		        $('html,body').animate({ scrollTop: 0 }, 'slow');
+		        return false; 
+		    });
 
 			var triggerAnimate = function(){   
 			 
@@ -122,6 +127,16 @@ export class Globals {
 
 			}
 
+			var scrollUpButton = function(elem){
+					 
+			  	var x = TweenMax.staggerFrom(elem, 0.7, {opacity: 0, scale: 0, ease:Power4.easeOut}, 0.2);
+
+		 		var mainNavScene = new ScrollMagic.Scene({ triggerElement: '.about-hotel-content', triggerHook: "onEnter", offset: 250})
+		        .setTween( x )
+		        .addTo(controller); 
+
+			}
+
 
 			var fadeInIteration = function(elem){
 					 
@@ -156,18 +171,19 @@ export class Globals {
 			 var paralaxEffect = function(element, position){
 
 				new ScrollMagic.Scene({triggerElement: element, triggerHook: "onEnter",})
-			    .duration('300%')
+			    .duration(1500)
 			    .setTween( element , { backgroundPosition: position, ease: Linear.easeNone }) 
 			    .addTo(controller);
 
 		    }
 
-		    paralaxEffect('.services-content .left-img', '-50% 50%');
-		    paralaxEffect('.carousel-item', '0% 100%');
+		    paralaxEffect('.services-content .parallax-img', '50% 100%');
+		    //paralaxEffect('.carousel-item', '0% 100%');
 		    paralaxEffect('.parallax-header-content', '50% 90%');
 			triggerAnimate();
 			zoomInIteration('.room-details');
 			fadeInIteration('.footer-widget'); 
+			scrollUpButton('.scroll-to-top');
 			socialIcons();
 
 		});

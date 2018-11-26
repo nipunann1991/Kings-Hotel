@@ -1,69 +1,90 @@
 @import '../../../styles';
 
+.contact-details{
+	color: $white;
+	overflow: hidden;
+	width: 100%; 
+	padding: 7px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	background: $dark-brown-color;
+
+	ul.contact-list{
+		margin-bottom: 0;
+		padding-left: 0;
+		float: left;
+
+		li{
+			display: inline-block;
+			margin-right: 15px; 
+
+			i{
+				margin-right: 5px;
+				color: $base-color;
+			}
+		}
+	}
+
+	ul.social-icons{
+		float: right;
+		margin-bottom: 0;
+		padding-left: 0;
+
+		li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 10px;
+
+			a{
+				color: $base-color;
+			}
+		}
+
+	}
+
+}
+
 nav.navbar{
-	position: absolute;
+	position: relative;
 	width: 100%;
 	z-index: 1001;
-	background: rgba(0, 0, 0, 0.57);
+	padding: 2px;
+	background-color: #fffaf5;
+	border-top: 4px $base-color solid; 
 
 	a{
-		color: $white;
+		color: $dark-color; 
 	}
 
 	.container{
-		flex-wrap: wrap;
+		flex-wrap: wrap; 
 
-		.contact-details{
-			color: $white;
-			overflow: hidden;
-			width: 100%;
-			border-bottom: 1px rgba(255, 255, 255, 0.12) solid;
-			padding-bottom: 5px;
-			font-family: 'Montserrat', sans-serif;
-			font-size: 12px;
-
-			ul.contact-list{
-				margin-bottom: 0;
-				padding-left: 0;
-				float: left;
-
-				li{
-					display: inline-block;
-					margin-right: 15px;
-					color: #d4d4d4;
-
-					i{
-						margin-right: 5px;
-					}
-				}
+		a.navbar-brand{
+			img{
+				width: 130px;
 			}
-
-			ul.social-icons{
-				float: right;
-				margin-bottom: 0;
-				padding-left: 0;
-
-				li{
-					list-style: none;
-					display: inline-block;
-					margin-right: 10px;
-
-					a{
-						color: #d4d4d4;
-					}
-				}
-
-			}
-
 		}
 
 		ul.navbar-nav{ 
 
 			li{
+			    
 				a{
 					font-size: $base-font-size + 2;
 					font-weight: 600;	
+					padding: 0px 15px;
+					border-right: 1px $base-color solid;
 
+					&:hover{
+						color: $base-color;
+					}
+
+				}
+
+				&:last-child{
+					a{
+						border-right: 0;
+					}
 				}
 			}
 		}

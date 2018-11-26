@@ -12,6 +12,7 @@ import { CommonPageComponent } from './page-templates/common-page/common-page.co
 import { NavigationComponent } from './common-components/navigation/navigation.component';
 import { FooterComponent } from './common-components/footer/footer.component';
 import { AboutPageComponent } from './page-templates/about-page/about-page.component';
+import { ContactPageComponent } from './page-templates/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutPageComponent } from './page-templates/about-page/about-page.compo
     CommonPageComponent,
     NavigationComponent,
     FooterComponent,
-    AboutPageComponent
+    AboutPageComponent, 
+    ContactPageComponent
   ],
   imports: [
   	RouterModule.forRoot(AppRoutes, { useHash: false }),

@@ -184,16 +184,26 @@ section{
 		text-align: center;
 		background: $dark-brown-color;
 
+		.parallax-img{
+			background-image: url(../../../assets/images/banner4.jpg);
+			background-size: cover;
+			background-position: 50% 0%;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+
 		.left-img{
 			position: absolute;
-		    top: 0;
+			top: 0; 
 		    height: 100%;
-		    left: 0;
+		    right: 0;
 		    background: #eee;
-		    z-index: 0;
-		    background-image: url(../../../assets/images/banner4.jpg);
-			background-size: cover;
-			background-position: 50%;
+		    z-index: 0; 
+		    background: rgba(49, 49, 49, 0.95);
+		   
 		}
 
 		.services-block{
@@ -203,11 +213,43 @@ section{
 			h2{
 				margin-bottom: 30px;
 				color: $white;
-
+				text-align: left;
+				letter-spacing: 1px;  
 			}
 
 			p{
 				color: $white;
+			}
+
+			ul{
+				padding-left: 0;
+				overflow: hidden;
+				margin-bottom: 0;
+				margin-top: 25px;
+
+				li{
+					color: $white; 
+					list-style-type: none; 
+					width: 50%;
+					float: left;
+					margin-bottom: 25px;
+					display: flex;
+					align-items: center;
+
+					i{ 
+						font-size: 25px;
+						vertical-align: middle;
+						color: $base-color; 
+						margin-right: 15px;
+					    width: 50px;
+					    height: 50px;
+					    border: 1px solid;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+					    border-radius: 50%;
+					}
+				}
 			}
 		}
 
