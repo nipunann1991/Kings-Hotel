@@ -1,0 +1,39 @@
+@import '../../../styles';
+
+section.parallax-header-content{ 
+ 	background-image: url(../../../assets/images/slider-2.jpg);
+}
+
+.room-list{
+	border-bottom: 1px $base-color solid;
+	padding-bottom: 50px;
+	margin-bottom: 30px;
+
+	.room-img{
+		img{
+			width: 100%;
+		}
+	}
+
+	h4{
+		margin: 20px 0;
+		font-size: $h4-font-size;
+		font-weight: 500;
+	}
+
+	ul{
+		padding-left: 0;
+
+		li{
+			list-style: none;
+			float: left;
+			width: 25%;
+			margin-bottom: 10px;
+
+			i{
+				font-size: 18px;
+				margin-right: 5px;
+			}
+		}
+	}
+}

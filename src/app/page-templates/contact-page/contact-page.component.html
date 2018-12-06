@@ -9,28 +9,78 @@
 </section>
 <section class="mid-content container-fluid">
 	<div class="container">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic culpa, et ipsa nulla fuga. Corporis esse perspiciatis a quaerat voluptas at dolorem, voluptatem ipsum veniam iure, dignissimos ratione odit earum!</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic culpa, et ipsa nulla fuga. Corporis esse perspiciatis a quaerat voluptas at dolorem, voluptatem ipsum veniam iure, dignissimos ratione odit earum!</p>
-		<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi facilis a, cum molestias id iusto quis distinctio, dolorem dolor culpa. Accusantium optio inventore dolores vitae numquam quo delectus cupiditate!</span>
-		<span>Et porro quis, est vel assumenda quas, alias ad harum deserunt magni voluptate adipisci voluptatem delectus dolores facilis maiores tempora odio nam saepe quod. Non, laudantium voluptatibus perspiciatis illo voluptate.</span>
-		<span>Temporibus perferendis neque, maiores quos est a delectus doloremque, aut, sunt quisquam veniam eos beatae deleniti! Voluptates, eligendi? Earum dolor culpa, quam odit aspernatur iusto adipisci sit quaerat placeat nulla!</span>
-		<span>Voluptate aspernatur voluptatum est qui id facilis consectetur nihil quidem quod. Blanditiis perferendis et autem est. Velit illo natus, porro provident ea nisi in alias saepe asperiores laudantium tempore odit!</span>
-		<span>Iure tempora pariatur neque saepe. Explicabo quae assumenda, sunt dolores beatae ipsum quod architecto officia libero expedita natus mollitia fuga nesciunt consequatur nam cumque incidunt ut iste aliquid provident ab!</span>
-		<span>Neque culpa voluptatum, soluta dolores error, cupiditate quas. Debitis illum ea inventore quae explicabo, cum dolores ducimus quisquam eius suscipit veniam, beatae quam eum architecto enim est laborum soluta voluptatibus.</span>
-		<span>Ratione natus commodi quia autem placeat magni delectus eius quasi adipisci quaerat molestiae nesciunt, repellendus aspernatur veniam. Fugit quos, ducimus nobis. Nam harum obcaecati tempora. Assumenda error illum necessitatibus ipsa!</span>
-		<span>Excepturi ipsum corporis, suscipit reprehenderit quia maxime architecto sed iure ex repellendus omnis quibusdam eveniet nisi magni vel quis natus sit sunt doloremque, quae fuga minima vero dolore! Veritatis, non?</span>
-		<span>Nemo totam omnis sapiente excepturi, laudantium doloremque! Minus cum possimus, expedita mollitia eveniet. Quaerat distinctio laborum nihil, laudantium culpa possimus nulla facere accusamus architecto eius vel? Omnis autem molestias repellat.</span>
-		<span>Sapiente quis, laudantium molestiae harum, cupiditate aut voluptas, rem dolor ea accusamus, deserunt tempore? Totam, officiis autem nisi temporibus praesentium repellendus sint perferendis, impedit iusto, repellat culpa maxime illo quas!</span>
-		<span>Dolorem maiores, odit sed quidem error repellat autem optio unde ad accusamus. Placeat aspernatur vitae rerum, ad commodi aperiam sint molestias veritatis qui reiciendis ex optio quisquam. Veniam, veritatis, exercitationem!</span>
-		<span>Libero laborum, autem aliquid doloribus iure at sunt fugit voluptatum exercitationem beatae unde omnis, laudantium est sed praesentium cum tempora laboriosam aperiam assumenda quas, corporis minus molestias alias inventore. In.</span>
-		<span>Quia placeat cumque tempora error distinctio eos eveniet. Voluptatem perspiciatis cumque quasi ut recusandae, fuga reprehenderit veritatis corrupti excepturi possimus porro, rem hic quia in dolores. Consequuntur ab, natus. Nobis.</span>
-		<span>Magnam voluptatum nulla at totam, quibusdam ipsa vitae incidunt fuga aspernatur nemo maxime commodi pariatur recusandae repellat, non ratione quam, impedit, quidem blanditiis ipsum debitis a cum sit est! Alias!</span>
-		<span>Dolore aperiam minus, unde, praesentium cum sunt perspiciatis reprehenderit delectus autem labore excepturi dicta ratione velit beatae voluptates perferendis quae. Porro deleniti, et beatae fuga culpa, alias dolorem natus error.</span>
-		<span>Voluptatibus voluptatem molestias necessitatibus, non aliquam at itaque alias atque praesentium vel sit similique totam consequuntur nostrum nesciunt repudiandae tempora aut nihil asperiores dolorum! Illo placeat, possimus quo! Quisquam, eligendi.</span>
-		<span>Odit, adipisci, asperiores. Earum animi doloremque, officia, quia esse consectetur distinctio ullam quidem atque odit perspiciatis architecto quo saepe alias. Modi ducimus vero repellat maiores, obcaecati voluptate possimus, odit at.</span>
-		<span>Illum quos voluptatem facilis aliquid fuga sequi, culpa omnis, voluptatibus quod nemo aspernatur quo ipsa facere ratione non velit consequatur nostrum impedit fugit accusantium, tenetur eius delectus! Id, enim, harum!</span>
-		<span>Voluptate deleniti rem, saepe quidem sed nulla tenetur pariatur quaerat ex cupiditate! Eaque at, minima ea temporibus nisi saepe quo consectetur ducimus id error possimus, assumenda cupiditate vero, commodi recusandae?</span>
-		<span>Assumenda esse, animi vitae recusandae numquam voluptates et dicta autem necessitatibus tenetur dolores, optio nemo, quibusdam, non ut molestiae ad molestias. Quam hic, illum deleniti asperiores nesciunt facere omnis dolore?</span></p>
+		<div class="row">
+			<div class="col-md-6">
+				<form id="contact-form" method="post" action="contact.php" role="form">
+
+				    <div class="messages"></div>
+
+				    <div class="controls">
+
+				        <div class="row">
+				            <div class="col-md-6">
+				                <div class="form-group">
+				                    <label for="form_name">Firstname *</label>
+				                    <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				            <div class="col-md-6">
+				                <div class="form-group">
+				                    <label for="form_lastname">Lastname *</label>
+				                    <input id="form_lastname" type="text" name="surname" class="form-control"required="required" data-error="Lastname is required.">
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="col-md-12">
+				                <div class="form-group">
+				                    <label for="form_email">Email *</label>
+				                    <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required.">
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				            <div class="col-md-12">
+				                <div class="form-group">
+				                    <label for="form_need">Please specify your need *</label>
+				                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+				                        <option value=""></option>
+				                        <option value="Request quotation">Request quotation</option>
+				                        <option value="Request order status">Request Booking</option>
+				                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+				                        <option value="Other">Other</option>
+				                    </select>
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="col-md-12">
+				                <div class="form-group">
+				                    <label for="form_message">Message *</label>
+				                    <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				            <div class="col-md-12">
+				                <input type="submit" class="submit-button" value="Send message">
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="col-md-12">
+				                <p class="text-muted">
+				                    <strong>*</strong> These fields are required.</p>
+				            </div>
+				        </div>
+				    </div>
+
+				</form>
+			</div>
+			<div class="col-md-5 offset-md-1">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.510376535893!2d80.78950151259058!3d6.948962262119084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae380928369c7e5%3A0x1a8c7459853de70c!2sWindermere!5e0!3m2!1sen!2slk!4v1543857716712" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div>
 </section>
 

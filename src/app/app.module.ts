@@ -13,6 +13,8 @@ import { NavigationComponent } from './common-components/navigation/navigation.c
 import { FooterComponent } from './common-components/footer/footer.component';
 import { AboutPageComponent } from './page-templates/about-page/about-page.component';
 import { ContactPageComponent } from './page-templates/contact-page/contact-page.component';
+import { AccommodationComponent } from './page-templates/accommodation/accommodation.component';
+import { GalleryPageComponent } from './page-templates/gallery-page/gallery-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { ContactPageComponent } from './page-templates/contact-page/contact-page
     NavigationComponent,
     FooterComponent,
     AboutPageComponent, 
-    ContactPageComponent
+    ContactPageComponent, AccommodationComponent, GalleryPageComponent
   ],
   imports: [
   	RouterModule.forRoot(AppRoutes, { useHash: false }),

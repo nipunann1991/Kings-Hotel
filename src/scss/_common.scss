@@ -16,9 +16,11 @@ h1, h2, h3{
 
 
 body, p{ 
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: $dark-brown-color;
 	font-size: $base-font-size;	
+	line-height: $base-font-size + 7;
+	letter-spacing: 0.02em;
 }
 
 
@@ -42,6 +44,27 @@ body, p{
 
 }
 
+.submit-button{
+	margin-top: 20px;
+	display: inline-block;
+	padding: 12px 38px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $base-color;
+    background-color: transparent;
+    border: 1px $base-color solid; 
+    @include transition(0.5s all ease);
+    margin-bottom: 20px;
+	
+
+	&:hover{
+		background-color: $base-color;
+		color: $white;
+		text-decoration: none;
+	}
+
+}
+
 
 .site-loader{
 	position: fixed;
@@ -51,9 +74,13 @@ body, p{
     z-index: 1003;
 }
 
+.mid-content{
+	padding: 80px 0;
+}
+
 
 .parallax-header-content{
-	height: 300px;
+	height: 260px;
 	background: #eee; 
 	background-size: cover;
 	background-position: 50%;

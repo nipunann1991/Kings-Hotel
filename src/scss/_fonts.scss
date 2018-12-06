@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alice|Playfair+Display:400,700,900|Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Alice|Playfair+Display:400,700,900|Open+Sans:300,400,600,700|Abril+Fatface');
 
 @font-face {
   font-family: 'icomoon';
@@ -27,79 +27,36 @@
 }
 
 
-
-.icon-delete-button:before {
-  content: "\e900";
-}
-.icon-edit:before {
-  content: "\e901";
-}
-.icon-add:before {
-  content: "\e902";
-}
-.icon-profit:before {
-  content: "\e903";
-}
-.icon-home:before {
-  content: "\e904";
-}
-.icon-calendar:before {
-  content: "\e905";
-}
-.icon-settings:before {
-  content: "\e906";
-}
-.icon-notification:before {
+.icon-bathrobe:before {
   content: "\e907";
 }
-.icon-power:before {
+.icon-shower:before {
   content: "\e908";
 }
-.icon-hotel:before {
+.icon-closet:before {
   content: "\e909";
 }
-.icon-room:before {
+.icon-ac:before {
   content: "\e90a";
 }
-.icon-cancel:before {
-  content: "\e90b";
+.icon-water-heater:before {
+  content: "\e900";
 }
-.icon-alarm-clock:before {
-  content: "\e90c";
+.icon-laundry:before {
+  content: "\e901";
 }
-.icon-microwave:before {
-  content: "\e90d";
+.icon-phone-call:before {
+  content: "\e902";
 }
-.icon-hair-dryer:before {
-  content: "\e90e";
+.icon-parking:before {
+  content: "\e903";
 }
-.icon-wine-glass:before {
-  content: "\e90f";
+.icon-swimming-pool:before {
+  content: "\e904";
 }
-.icon-room-service:before {
-  content: "\e910";
-}
-.icon-air-conditioner:before {
-  content: "\e911";
-}
-.icon-coffee-cup:before {
-  content: "\e912";
-}
-.icon-bathtub:before {
-  content: "\e913";
-}
-.icon-washing-machine:before {
-  content: "\e914";
-}
-.icon-heater:before {
-  content: "\e915";
-}
-.icon-towel:before {
-  content: "\e916";
-}
-.icon-shower:before {
-  content: "\e917";
+.icon-tv:before {
+  content: "\e905";
 }
 .icon-wifi:before {
-  content: "\e918";
+  content: "\e906";
 }

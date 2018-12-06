@@ -1,7 +1,7 @@
 <div class="loader site-loader"></div>
 <app-navigation></app-navigation>
 <section class="slider-content container-fluid"> 
-
+	<img class="sp-badge" src="../../assets/images/special-badge.png" alt="">
 	<div id="image-slider" class="carousel slide carousel-fade" data-ride="carousel">
 	  <ol class="carousel-indicators">
 	    <li *ngFor="let isl of img_slider; let i = index" [ngClass]="{'active': isl.active == '1' }" data-target="#image-slider" class="s{{i}}" [attr.data-slide-to]="i" ></li> 
@@ -22,7 +22,7 @@
 	</div> 
 </section>
 
-<section class="about-hotel-content container-fluid">
+<section class="about-hotel-content container-fluid hp">
 	<div class="container">
 		 <div class="row">
 		 	<div class="col-md-6 left-content">
@@ -49,10 +49,10 @@
 	</div>
 </section>
 
-<section class="rooms-content container-fluid">
+<section class="rooms-content container-fluid hp">
 	<div class="parallax-image"></div>
 	<div class="container">
-		<h2>Rooms &amp; Suits</h2>
+		<h2>Rooms &amp; Suits <div class="separator"><span><i class="fa fa-circle"></i></span></div> </h2><br/> 
 		<p>Kings Hotel has 2 types of elegantly furnished and air conditioned classic rooms,<br/> which will be a perfect pick both for business and leisure travelers.</p>
 		 <div class="row"> 
 		 	<div class="col-md-6 room-details">
@@ -61,7 +61,7 @@
 		 		 </div>
 		 		 <div class="details">
 		 		 	<h3>Deluxe Room</h3>
-		 		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, neque, impedit enim nobis temporibus distinctio delectus doloribus aspernatur molestiae beatae, ipsam similique quisquam voluptate accusantium atque omnis harum perferendis facilis!</p>
+		 		 	<p>Unparalleled comfort arises at Deluxe Room, overlooking the mountain view that encapsulates a harmonious balance between spectacular design and beautiful interiors. Ideal for an intimate break or family fun, the Deluxe Room offers stunning views of the mountains and the ultimate in pampering with spacious, airy rooms and bathrooms with relaxing rainfall showers.</p>
 		 		 </div>
 		 	</div>
 		 	<div class="col-md-6 room-details">
@@ -70,7 +70,7 @@
 		 		 </div>
 		 		 <div class="details">
 		 		 	<h3>Executive Room</h3>
-		 		 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, neque, impedit enim nobis temporibus distinctio delectus doloribus aspernatur molestiae beatae, ipsam similique quisquam voluptate accusantium atque omnis harum perferendis facilis!</p>
+		 		 	<p>The Executive Room overlook the gorgeous hills and adjacent exotic tea estates in front of the hotel. They feature enhanced technology with interconnecting facilities for families. Guests will be able to enjoy the sun on the misty hills and beautifully manicured gardens.</p>
 		 		 </div>
 		 	</div>
 		 	<!-- <div class="col-md-4 room-details">
@@ -84,10 +84,11 @@
 		 	</div> -->
 		 </div>
 
-		 <a href="#" class="read-more" >View More Rooms</a>
+		 <a routerLink="/accommodation" class="read-more"  >View More Rooms</a>
 	</div>
 </section>
-<section class="services-content container-fluid">
+
+<section class="services-content container-fluid hp">
 	<div class="parallax-img"></div>
 	<div class="col-md-6 left-img">
 		
@@ -99,15 +100,16 @@
 		 		<p>We are small but we offer world class services more valued to your money. We are always on our toes to serve you. Here's some of our main amentities which we offer to you.</p>
 
 		 		<ul>
-		 			<li><i class="fa fa-wifi" aria-hidden="true"></i> Free Wifi</li>
-		 			<li><i class="fa fa-phone" aria-hidden="true"></i> 24/7 Front Desk</li>
-		 			<li><i class="fa fa-car" aria-hidden="true"></i> Parking</li>
-		 			<li><i class="fa fa-shopping-basket" aria-hidden="true"></i> Laundry Service</li>
-		 			<li><i class="fa fa-television" aria-hidden="true"></i> Satellite TV</li>
-		 			<li><i class="fa fa-bath" aria-hidden="true"></i> Pool</li>
+		 			<li><i class="icon-wifi" aria-hidden="true"></i> Free Wifi</li>
+		 			<li><i class="icon-phone-call" aria-hidden="true"></i> 24/7 Front Desk</li>
+		 			<li><i class="icon-parking" aria-hidden="true"></i> Parking</li>
+		 			<li><i class="icon-laundry" aria-hidden="true"></i> Laundry Service</li>
+		 			<li><i class="icon-tv" aria-hidden="true"></i> Satellite TV</li>
+		 			<li><i class="icon-water-heater" aria-hidden="true"></i> Hot Water</li>
 		 			 
 		 		</ul>
-		 		 
+		 		
+		 		<p>* Hot water facility is included in all our rooms.</p>
 		 		 
 		 	</div>
 		</div>
@@ -122,7 +124,13 @@
 	<div class="container"> 
 		 <div class="row"> 
 		 	<div class="col-md-12 gallery">
-		 		<h2>Gallery</h2> 
+		 		<h2>
+		 			Our Gallery
+		 			<div class="separator"><span><i class="fa fa-circle"></i></span></div> 
+		 		</h2> <br/> 
+				<p>Just visit our image gallery to take a tour on Kings Hotel's <br/> 
+				rooms, lobby, garden and the surroundings.</p> <br/> <br/> 
+
 
 		 		<ng-masonry-grid class="anim-up"
                     [masonryOptions]="{ transitionDuration: '0.8s', gutter: 4 }" 
@@ -147,4 +155,26 @@
 		 
 	</div>
 </section>
+
+<section class="about-content parallax-img container-fluid">
+	<div class="container"> 
+
+		<div class="row"> 
+		 	<div class="col-md-6">
+		 		<h2>Visit Nuwaraeliya</h2> 
+		 		
+		 		<p>Nuwara Eliya is a city in the tea country hills of central Sri Lanka. The naturally landscaped Hakgala Botanical Gardens displays roses and tree ferns, and shelters monkeys and blue magpies. Nearby Seetha Amman Temple, a colorful Hindu shrine, is decorated with religious figures. Densely forested Galway's Land National Park is a sanctuary for endemic and migratory bird species, including bulbuls and flycatchers.</p>
+
+		 		<a href="" class="read-more">View Attractions</a>
+		 	</div>
+		 	<div class="col-md-6">
+		 		<iframe width="100%" height="315" src="https://www.youtube.com/embed/MFvnmdmEeJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 	</div>
+		</div>
+		
+	</div>
+</section>
+
+
+
 <app-footer></app-footer>

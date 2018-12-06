@@ -11,9 +11,9 @@ export class Globals {
  
 
 	contact_details : any = {
-		address: "Kings Hotel, Lot Number 50, Windermiyer Park, Nuwaraeliya, Sri Lanka",
+		address: "Kings Hotel, Lot Number 50, Windermere Park, Nuwaraeliya, Sri Lanka",
 		tel: "(+94) 71 981 5500",
-		email: "info@kings-nuwaraeliya.com"
+		email: "info@kingsnuwaraeliya.com"
 
 	}   
 
@@ -76,7 +76,7 @@ export class Globals {
 				});
 
 		 
-				$('.fade-content, section .container p, .rooms-content h2').each( function (index, element) { 
+				$('.fade-content, .hp p, .rooms-content h2').each( function (index, element) { 
 					 
 				  	var imageBlocks = new TimelineMax(); 
 
@@ -177,12 +177,13 @@ export class Globals {
 
 		    }
 
-		    paralaxEffect('.services-content .parallax-img', '50% 100%');
+		    paralaxEffect('.services-content .parallax-img',  '50% 100%');
+		    paralaxEffect('.about-content.parallax-img', '50% 100%');
 		    //paralaxEffect('.carousel-item', '0% 100%');
 		    paralaxEffect('.parallax-header-content', '50% 90%');
 			triggerAnimate();
 			zoomInIteration('.room-details');
-			fadeInIteration('.footer-widget'); 
+			fadeInIteration('.footer-widget, .services-block ul li'); 
 			scrollUpButton('.scroll-to-top');
 			socialIcons();
 

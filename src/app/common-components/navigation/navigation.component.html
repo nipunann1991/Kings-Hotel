@@ -2,7 +2,7 @@
 	<div class="container">
 		<ul class="contact-list">
 			<li><i class="fa fa-phone" aria-hidden="true"></i> {{tel}}</li>
-			<li><i class="fa fa-envelope" aria-hidden="true"></i>  {{email}}</li>
+			<li><i class="fa fa-envelope" aria-hidden="true"></i>  <a href="mailto:{{email}}">{{email}}</a></li>
 		</ul>
 
 		<ul class="social-icons">
@@ -31,7 +31,7 @@
 			<img src="../../assets/images/logo.png" alt="">
 		</a>
 	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
+	    	<span class="navbar-toggler-icon"></span> 
 	  	</button>
 		
 
@@ -42,10 +42,10 @@
 			        	<a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
 			      	</li>
 			      	<li class="nav-item">
-			        	<a class="nav-link" routerLink="/accomodation">Accommodation</a>
+			        	<a class="nav-link" routerLink="/accommodation">Accommodation</a>
 			      	</li>
-			      	<li class="nav-item">
-			        	<a class="nav-link" routerLink="/gallery">Gallery</a>
+			      	<li class="nav-item disabled">
+			        	<a class="nav-link"  routerLink="/gallery">Gallery</a>
 			      	</li>
 			      	<li class="nav-item">
 			        	<a class="nav-link" routerLink="/about-us">About Us</a>

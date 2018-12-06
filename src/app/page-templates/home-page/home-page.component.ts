@@ -15,14 +15,14 @@ export class HomePageComponent implements OnInit {
 	address: any; tel: any; email: any; img_slider: any;
 
 	masonryItems: any = [
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-    { full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
-		{ full_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800&w=600', thumb_img: 'https://images.pexels.com/photos/45775/pexels-photo-45775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=137'},  
+    { full_img: '../../assets/images/room/IMG-20181129-WA0000.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0000.jpg'},  
+    { full_img: '../../assets/images/room/IMG-20181129-WA0004.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0004.jpg'},     
+    { full_img: '../../assets/images/room/IMG-20181129-WA0005.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0005.jpg'},     
+    { full_img: '../../assets/images/room/IMG-20181129-WA0007.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0007.jpg'},     
+    { full_img: '../../assets/images/room/IMG-20181129-WA0008.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0008.jpg'},     
+    { full_img: '../../assets/images/room/IMG-20181129-WA0008.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0008.jpg'},     
+    { full_img: '../../assets/images/room/IMG-20181129-WA0012.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0012.jpg'},     
+    { full_img: '../../assets/images/room/IMG-20181129-WA0011.jpg', thumb_img: '../../assets/images/room/thumb/IMG-20181129-WA0011.jpg'},     
 	];
 
 

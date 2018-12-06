@@ -1,11 +1,30 @@
 @import '../../../styles';
 
+
+.navbar-collapse{
+
+	@include breakpointMax($x-small-desktop - 1){
+		position: absolute;
+	    background: #ffebcd;
+	    width: 100%;
+	    left: 0;
+	    top: 100px;
+	}
+}
+
+.navbar-toggler{
+	border: 2px solid;
+	color: $base-color;
+	margin-right: 10px;
+}
+
+
+
 .contact-details{
 	color: $white;
 	overflow: hidden;
 	width: 100%; 
-	padding: 7px 0;
-	font-family: 'Montserrat', sans-serif;
+	padding: 7px 0; 
 	font-size: 12px;
 	background: $dark-brown-color;
 
@@ -17,10 +36,15 @@
 		li{
 			display: inline-block;
 			margin-right: 15px; 
+			letter-spacing: 0.02rem;
 
 			i{
 				margin-right: 5px;
 				color: $base-color;
+			}
+
+			a{
+				color: $white;
 			}
 		}
 	}
@@ -77,6 +101,17 @@ nav.navbar{
 
 					&:hover{
 						color: $base-color;
+					}
+
+					@include breakpointMax($x-small-desktop - 1){
+						padding: 10px 15px;
+						border-right: 0;
+						border-top: 1px $base-color solid;
+
+						&:hover{
+							background: $base-color;
+							color: $dark-color;
+						}
 					}
 
 				}
