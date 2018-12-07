@@ -92,12 +92,14 @@ nav.navbar{
 		ul.navbar-nav{ 
 
 			li{
+				 
 			    
 				a{
 					font-size: $base-font-size + 2;
 					font-weight: 600;	
 					padding: 0px 15px;
 					border-right: 1px $base-color solid;
+					letter-spacing: 0;
 
 					&:hover{
 						color: $base-color;
@@ -114,9 +116,28 @@ nav.navbar{
 						}
 					}
 
-				}
+					&.book-now{
+						background: $base-color;
+					    padding: 8px 15px;
+					    border-radius: 4px;
+					    @include transition(all .3s ease);
+					    text-decoration: none;
 
-				&:last-child{
+					    &:hover{
+							color: $dark-color; 
+							background: darken($base-color, 15%);
+
+					    }
+					}
+
+					&.br0{
+						border-right: 0;
+					}
+
+				} 
+				 
+				&:last-child{ 
+
 					a{
 						border-right: 0;
 					}

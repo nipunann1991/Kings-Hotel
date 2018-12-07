@@ -109,3 +109,13 @@ body, p{
 		}
 	}
 }
+
+
+.container{
+
+	@include breakpointMax($tablet-medium - 1){
+		max-width: 100%;	
+	}
+
+}
+ 

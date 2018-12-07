@@ -132,20 +132,46 @@ section{
 	&.about-hotel-content{
 
 		.left-content{
-			@include flex(); 
+
+			@include breakpoint($small-device){ 
+				order: 2;
+			}
+
+			@include breakpoint($tablet){ 
+				order: 1;
+			}
+			 
+			@include breakpoint($x-small-desktop){
+				@include flex();
+			}
 			
 			.img-content{
-				width: 400px;
+				width: 100%;
 				height: 400px;
 				background-color: #eee;
 				background-image: url(../../../assets/images/welcome-img.jpg);
 				background-size: cover;
-				background-position: 50%;
+				background-position: 50%; 
+
+				@include breakpoint($x-small-desktop){
+					width: 400px;
+				}
 			}
 
 		}
 
 		.right-content{
+
+			@include breakpoint($small-device){ 
+				margin-bottom: 35px;
+				order: 1;
+			}
+
+			@include breakpoint($tablet){ 
+				margin-bottom: 0;
+				order: 2;
+			}
+
 	
 			h2{
 				font-size: $h2-font-size;
@@ -155,8 +181,8 @@ section{
 
 			p{
 				font-size: $base-font-size + 2;	
-				line-height: $base-font-size + 12;
-				letter-spacing: 0.01em;
+				line-height: $base-font-size + 10;
+				letter-spacing: 0;
 			}
 
 		}
@@ -262,18 +288,41 @@ section{
 		    background: #eee;
 		    z-index: 0; 
 		    background: rgba(49, 49, 49, 0.95);
+
+		    @include breakpointMax($x-small-desktop - 1){
+				max-width: 100%;
+				flex: 0 0 100%;
+				margin-left: 0;	
+				background: rgba(49, 49, 49, 0.88); 
+			}
 		   
 		}
 
 		.services-block{
-			padding-left: 80px;
+			padding-left: 0;
 			text-align: left;
+
+			@include breakpointMax($x-small-desktop - 1){
+				max-width: 100%;
+				flex: 0 0 100%;
+				margin-left: 0;	
+				text-align: center;
+			}
+
+			@include breakpoint($x-small-desktop){
+				padding-left: 80px;
+			}
 
 			h2{
 				margin-bottom: 30px;
 				color: $white;
-				text-align: left;
+				text-align: center;
 				letter-spacing: 1px;  
+
+				@include breakpoint($x-small-desktop){
+					text-align: left;
+				}
+
 			}
 
 			p{
@@ -286,6 +335,18 @@ section{
 				margin-bottom: 0;
 				margin-top: 25px;
 
+				@include breakpoint($tablet){
+					width: 65%;
+					display: table;
+					margin: auto;
+				}
+
+				@include breakpoint($x-small-desktop){
+					width: 100%;
+					display: block;
+					margin: auto;
+				}
+
 				li{
 					color: $white; 
 					list-style-type: none; 
@@ -293,7 +354,18 @@ section{
 					float: left;
 					margin-bottom: 25px;
 					display: flex;
-					align-items: center;
+					align-items: center; 
+
+					@include breakpointMax($x-small-desktop - 1){
+						display: block;
+						width: 33.33%;
+					}
+
+					@include breakpointMax($medium-device - 1){
+						display: block;
+						width: 50%;
+					}
+
 
 					i{ 
 						font-size: 35px;
@@ -307,6 +379,11 @@ section{
 					    align-items: center;
 					    justify-content: center;
 					    border-radius: 50%;
+
+					    @include breakpointMax($x-small-desktop - 1){
+							display: block;
+							margin: auto;
+						}
 					}
 				}
 			}
@@ -330,7 +407,7 @@ section{
 
 	&.about-content{ 
 		position: relative;
-   		background-position: 50% 50%;
+   		background-position: 50% 70%;
    		background-image: url('../../../assets/images/slider-4.jpg'); 
    		color: $white;
 
@@ -342,6 +419,14 @@ section{
    			content: '';
    			left: 0;
    			top: 0;
+   		}
+
+
+   		.visit-nuwaraeliya{
+
+   			@include breakpointMax($tablet-medium - 1){
+				margin-bottom: 30px;
+			}
    		}
 
    		iframe{

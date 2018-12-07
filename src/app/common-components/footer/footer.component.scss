@@ -5,6 +5,22 @@ footer{
 	background: $dark-brown-color;
 	color: $white;
 	border-top: 4px $base-color solid; 
+
+	
+
+	.footer-widget{
+		@include breakpointMax($tablet-medium - 1){
+			margin-bottom: 30px;
+		}
+
+		&:nth-child(3){
+
+			@include breakpointMax($tablet-medium - 1){
+				margin-bottom: 0;
+			}
+
+		}
+	}
 	
 
 	.scroll-to-top{
@@ -42,7 +58,10 @@ footer{
 
 		p{
 			color: inherit;
-			margin-bottom: 0;	
+			margin-bottom: 0;
+			font-size: $base-font-size - 1;
+
+
 		}
 
 
@@ -103,6 +122,11 @@ footer{
 		a{
 			color: $white;
 		}
+	}
+
+	.visa{
+		margin-top: 20px;
+		width: 180px;
 	}
 
 }
