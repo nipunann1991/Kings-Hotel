@@ -1,3 +1,102 @@
+<!-- <div class="container-fluid booking-screen">
+ 
+		<div class="booking-box">
+			<h2>Book a Room</h2>
+
+			
+		</div> 
+ 
+</div> -->
+ 
+
+<!-- The Modal -->
+<div class="modal booking-screen" id="myModal">
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">Book a Room</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+
+         	<form id="contact-form" [formGroup]="form">
+
+			    <div class="messages"></div>
+
+			    <div class="controls">
+
+			        <div class="row">
+			            <div class="col-md-6">
+			                <div class="form-group">
+			                    <label for="form_name">First Name *</label>
+			                    <input id="form_name" type="text" formControlName="firstname" class="form-control" required="required" data-error="Firstname is required."> 
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="form-group">
+			                    <label for="form_lastname">Last Name *</label>
+			                    <input id="form_lastname" type="text" formControlName="lastname" class="form-control"required="required"> 
+			                </div>
+			            </div>
+			        </div>
+			        <div class="row">
+			            <div class="col-md-12">
+			                <div class="form-group">
+			                    <label for="form_email">Email *</label>
+			                    <input id="form_email" type="email" formControlName="email" class="form-control"  required="required"> 
+			                </div>
+			            </div> 
+			        </div>
+			        <div class="row">
+			            <div class="col-md-6">
+			                <div class="form-group">
+			                    <label for="form_name">Check In Date *</label>
+			                    <input id="form_name" type="date" formControlName="checkin" class="form-control"> 
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="form-group">
+			                    <label for="form_lastname">Check Out Date *</label>
+			                    <input id="form_lastname" type="date" formControlName="checkout" class="form-control"required="required"> 
+			                </div>
+			            </div>
+			        </div>
+			         <div class="row">
+			            <div class="col-md-12">
+			                <div class="form-group">
+			                    <label for="form_name">No of Guests *</label>
+			                    <input id="form_name" type="number" formControlName="no_of_guset" class="form-control" required="required"> 
+			                </div>
+			            </div> 
+			        </div>
+			        <div class="row">
+			            <div class="col-md-12">
+			                <div class="form-group">
+			                    <label for="form_message">Note *</label>
+			                    <textarea id="form_message" formControlName="note" class="form-control" rows="4" required="required"></textarea> 
+			                </div>
+			            </div>
+			            <div class="col-md-12">
+			                <button class="btn submit-button" (click)="bookingForm()">Check Availability</button>
+			            </div>
+			        </div>
+			        
+			    </div>
+
+			</form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
 <div class="contact-details">
 	<div class="container">
 		<ul class="contact-list">
@@ -55,7 +154,7 @@
 			      </li>
 
 			      <li>
-					<a class="book-now" href="">Book Now</a>
+					<a class="book-now" data-toggle="modal" data-target="#myModal">Book Now</a>
 			      </li>
 			    </ul> 
 			</div>

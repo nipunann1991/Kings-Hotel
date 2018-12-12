@@ -12,6 +12,10 @@
 	}
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
 .navbar-toggler{
 	border: 2px solid;
 	color: $base-color;
@@ -95,11 +99,12 @@ nav.navbar{
 				 
 			    
 				a{
-					font-size: $base-font-size + 2;
+					font-size: $base-font-size + 1;
 					font-weight: 600;	
 					padding: 0px 15px;
 					border-right: 1px $base-color solid;
 					letter-spacing: 0;
+					font-weight: 700;
 
 					&:hover{
 						color: $base-color;
@@ -122,6 +127,7 @@ nav.navbar{
 					    border-radius: 4px;
 					    @include transition(all .3s ease);
 					    text-decoration: none;
+					    cursor: pointer;
 
 					    &:hover{
 							color: $dark-color; 
@@ -145,4 +151,41 @@ nav.navbar{
 			}
 		}
 	} 
+}
+
+.booking-screen{
+	overflow-y: scroll; 
+	
+	.modal-header{
+		padding: 8px 20px;
+		border-bottom: 1px $base-color solid;
+	}
+
+	h2{ 
+		font-size: 27px;  
+	}
+
+	form{
+		padding: 0 10px;
+		font-size: 13px;
+
+		label{
+			margin-bottom: 0;
+		}
+
+		input, textarea{
+			font-size: 13px; 
+		}
+
+		button.submit-button{
+			margin-top: 0;
+			padding: 8px 25px;
+			background: $base-color;
+			color: $white; 
+
+			&:hover{
+				background: darken($base-color, 15%);
+			}
+		}
+	}
 }

@@ -66,8 +66,8 @@ section{
 		img.sp-badge{
 			position: absolute;
 		    z-index: 100;
-		    width: 150px;
-		    top: -30px;
+		    width: 170px;
+		    bottom: 20px; 
 		    right: 20px;
 		}
 		
@@ -333,12 +333,12 @@ section{
 				padding-left: 0;
 				overflow: hidden;
 				margin-bottom: 0;
-				margin-top: 25px;
+				margin: 25px 0;
 
 				@include breakpoint($tablet){
 					width: 65%;
 					display: table;
-					margin: auto;
+					margin: 25px auto;
 				}
 
 				@include breakpoint($x-small-desktop){

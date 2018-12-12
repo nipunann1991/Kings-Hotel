@@ -76,6 +76,8 @@ footer{
 					position: relative;
 					padding-left: 30px;	
 					margin-bottom: 15px;
+					font-size: $base-font-size - 1;
+
 
 					&:last-child{
 						margin-bottom: 0;

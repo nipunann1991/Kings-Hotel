@@ -8,7 +8,7 @@
 
 
 
-h1, h2, h3{ 
+h1, h2, h3, h4{ 
 	font-family: 'Alice', serif;
     text-transform: uppercase;
 	font-weight: 700;
@@ -16,7 +16,7 @@ h1, h2, h3{
 
 
 body, p{ 
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Muli', sans-serif;;
 	color: $dark-brown-color;
 	font-size: $base-font-size;	
 	line-height: $base-font-size + 7;
@@ -53,8 +53,19 @@ body, p{
     color: $base-color;
     background-color: transparent;
     border: 1px $base-color solid; 
-    @include transition(0.5s all ease);
+    @include transition(0.3s all ease);
     margin-bottom: 20px;
+    cursor: pointer;
+    outline: 0;
+
+    &.inv{
+    	background-color: $base-color;
+		color: $white;
+
+		&:hover{
+			background: darken($base-color, 15%);
+		}
+    }
 	
 
 	&:hover{
@@ -118,4 +129,32 @@ body, p{
 	}
 
 }
- 
+
+
+
+.visible-lg{
+	display: none;
+
+	@include breakpoint($tablet){
+		display: block;
+	}
+
+ }
+
+
+ form{
+ 	small{
+ 		color: #fd1717;
+ 	}
+
+ 	.ng-invalid.ng-touched{
+ 		border: 1px #ff051c solid; 
+ 	} 
+
+ }
+
+// form.ng-invalid{
+// 	input, textarea, select{
+// 		border: 1px solid #ff051c;
+// 	}
+// }

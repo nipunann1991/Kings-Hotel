@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule, HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { NgxImageGalleryModule } from 'ngx-image-gallery';
 import { NgMasonryGridModule } from 'ng-masonry-grid'; 
 import { AppRoutes } from  "./app.routes";
 import { Globals } from './app.global';
-
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './page-templates/home-page/home-page.component';
 import { CommonPageComponent } from './page-templates/common-page/common-page.component';
@@ -28,7 +29,7 @@ import { GalleryPageComponent } from './page-templates/gallery-page/gallery-page
   ],
   imports: [
   	RouterModule.forRoot(AppRoutes, { useHash: false }),
-    BrowserModule, NgMasonryGridModule
+    BrowserModule, NgMasonryGridModule, FormsModule, ReactiveFormsModule, HttpClientModule
   ],
   providers: [Globals],
   bootstrap: [AppComponent]

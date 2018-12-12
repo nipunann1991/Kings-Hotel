@@ -11,7 +11,17 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<form id="contact-form" method="post" action="contact.php" role="form">
+				<div class="alert success-msg alert-success alert-dismissible d-none">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+				 	Thanks for contacting Kings Hotel Nuwaraeliya. One of our staff member will get back to you shortly.
+				</div>
+
+				<div class="alert error-msg alert-danger alert-dismissible d-none">
+					<a href="javascript:void(0);" class="close" aria-label="close" title="close">×</a>
+				 	Please fill the form to submit.
+				</div>
+
+				<form id="contact-form" [formGroup]="form">
 
 				    <div class="messages"></div>
 
@@ -20,16 +30,16 @@
 				        <div class="row">
 				            <div class="col-md-6">
 				                <div class="form-group">
-				                    <label for="form_name">Firstname *</label>
-				                    <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
-				                    <div class="help-block with-errors"></div>
+				                    <label for="Firstname">First Name *</label>
+				                    <input id="Firstname" type="text" formControlName="Firstname" class="form-control" required="required" >
+				                    <small *ngIf="isFieldValid('Firstname')" > Please enter your First Name</small>
 				                </div>
 				            </div>
 				            <div class="col-md-6">
 				                <div class="form-group">
-				                    <label for="form_lastname">Lastname *</label>
-				                    <input id="form_lastname" type="text" name="surname" class="form-control"required="required" data-error="Lastname is required.">
-				                    <div class="help-block with-errors"></div>
+				                    <label for="Lastname">Last Name *</label>
+				                    <input id="Lastname" type="text" formControlName="Lastname" class="form-control"required="required" >
+				                    <small *ngIf="isFieldValid('Lastname')" > Please enter your Last Name</small>
 				                </div>
 				            </div>
 				        </div>
@@ -37,17 +47,17 @@
 				            <div class="col-md-12">
 				                <div class="form-group">
 				                    <label for="form_email">Email *</label>
-				                    <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required.">
-				                    <div class="help-block with-errors"></div>
+				                    <input id="form_email" type="email" formControlName="email" class="form-control"  required="required" data-error="Valid email is required.">
+				                    <small *ngIf="isFieldValid('email')" > Please enter your valid email</small> 
 				                </div>
 				            </div>
 				            <div class="col-md-12">
 				                <div class="form-group">
 				                    <label for="form_need">Please specify your need *</label>
-				                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-				                        <option value=""></option>
-				                        <option value="Request quotation">Request quotation</option>
-				                        <option value="Request order status">Request Booking</option>
+				                    <select id="form_need" formControlName="need" class="form-control" required="required" data-error="Please specify your need.">
+				                        <option value="Inquiry">Inquiry</option>
+				                        <option value="Request Quotation">Request Quotation</option>
+				                        <option value="Request Booking">Request Booking</option>
 				                        <option value="Request copy of an invoice">Request copy of an invoice</option>
 				                        <option value="Other">Other</option>
 				                    </select>
@@ -59,12 +69,12 @@
 				            <div class="col-md-12">
 				                <div class="form-group">
 				                    <label for="form_message">Message *</label>
-				                    <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+				                    <textarea id="form_message" formControlName="message" class="form-control" rows="4" required="required" data-error="Please, leave us a message."></textarea>
 				                    <div class="help-block with-errors"></div>
 				                </div>
 				            </div>
 				            <div class="col-md-12">
-				                <input type="submit" class="submit-button" value="Send message">
+				                <input type="submit" class="submit-button inv" (click)="contactForm()" value="Send Message">
 				            </div>
 				        </div>
 				        <div class="row">

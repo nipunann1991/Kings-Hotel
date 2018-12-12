@@ -178,12 +178,12 @@ export class Globals {
 		    }
 
 		    paralaxEffect('.services-content .parallax-img',  '50% 100%');
-		    paralaxEffect('.about-content.parallax-img', '50% 100%');
-		    //paralaxEffect('.carousel-item', '0% 100%');
+		    paralaxEffect('.about-content.parallax-img', '50% 100%'); 
 		    paralaxEffect('.parallax-header-content', '50% 90%');
 			triggerAnimate();
 			zoomInIteration('.room-details');
-			fadeInIteration('.footer-widget, .services-block ul li'); 
+			fadeInIteration('.services-block ul li'); 
+			fadeInIteration('.footer-widget');  
 			scrollUpButton('.scroll-to-top');
 			socialIcons();
 
